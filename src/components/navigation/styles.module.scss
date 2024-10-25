@@ -1,0 +1,54 @@
+.NavigationSite {
+    padding: 1rem 0; 
+    .navigationTopBorder {
+        background-color: #fff;
+        &::before {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: -10px;
+            width: 30px;
+            height: 30px;
+            border-top: 10px solid #fff;
+            border-left: 10px solid #fff;
+            border-top-left-radius: 30px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: -0px;
+            bottom: -40px;
+            width: 55px;
+            height: 60px;
+            border-top: 20px solid #fff;
+            border-left: 20px solid #fff;
+            border-bottom: 20px solid #fff;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            pointer-events: none;
+        }
+    }
+}
+
+.menuListLinks {
+    li a {
+        @apply text-defCol2;
+        padding: .5rem 2rem;
+        font-size: 1.1rem;
+        display: block;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 1px;
+            width: 20px;
+            @apply bg-defCol2;
+            transition: width .3s;
+        }
+        &:hover::before {
+            width: 25px;
+        }
+    }
+}

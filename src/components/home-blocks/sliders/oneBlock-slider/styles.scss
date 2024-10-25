@@ -1,0 +1,27 @@
+.OneBlock__slider {
+
+}
+.OneBlock__slider .swiper-slide {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 250px;
+    padding: 2rem 1rem;
+    .icon {
+        width: 50px;
+        height: 50px;
+        @apply bg-defCol1 rounded-full flex items-center justify-center;        
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @apply text-defCol1;
+    }
+    p {
+
+    }
+}

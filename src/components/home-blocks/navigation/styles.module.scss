@@ -1,0 +1,33 @@
+.HomeNavigation_content {
+    width: calc(100% - 300px);
+    height: 60px;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(#fff, .2);
+    &::after {
+        content: '';
+        background-color: rgba(#fff, .2);
+        position: absolute;
+        left: 100%;
+        bottom: -1px;
+        width: 30px;
+        height: 1px;
+    }
+}
+.navigationList {
+   a {
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -18px;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+   }
+}

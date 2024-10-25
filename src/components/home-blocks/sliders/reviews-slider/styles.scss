@@ -1,0 +1,29 @@
+.topRight_border {
+    @apply bg-defCol3;
+    width: 50%;
+    height: 50px;
+    border-bottom-left-radius: 30px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: -10px;
+        width: 30px;
+        height: 30px;
+        border-top: 10px solid #7EB1EB;
+        border-right: 10px solid #7EB1EB;
+        border-top-right-radius: 40px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        bottom: -20px;
+        width: 30px;
+        height: 30px;
+        border-top: 10px solid #7EB1EB;
+        border-right: 10px solid #7EB1EB;
+        border-top-right-radius: 40px;
+    }
+    i {z-index: 10;padding-right: 15px;}
+}

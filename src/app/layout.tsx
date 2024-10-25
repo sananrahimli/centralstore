@@ -1,8 +1,16 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import { Lexend } from "next/font/google";
+import "./globals.css";
+import FooterSite from "@/components/footer";
+import NavigationSite from "@/components/navigation";
+
+
+const lexend = Lexend({ 
+    subsets: ['latin'], 
+    weight: ['200', '400', '700'], 
+    variable: '--font-lexend'
+ });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +22,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lexend.className}>
+          <NavigationSite/>    
+          
+          {children}
+
+          <FooterSite></FooterSite>
+      </body>
     </html>
   );
 }

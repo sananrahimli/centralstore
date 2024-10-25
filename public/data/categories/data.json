@@ -1,0 +1,34 @@
+{
+  "kateqoriyalar": [
+    {
+      "ad": "Kompüterlər",
+      "ikon": "/icons/computers.png",
+      "alt_kateqoriyalar": ["Noutbuklar", "Stasionar kompüterlər", "Serverlər"]
+    },
+    {
+      "ad": "Telefonlar və Aksessuarlar",
+      "ikon": "/icons/phones.png",
+      "alt_kateqoriyalar": ["Mobil telefonlar", "Telefon qabları", "Qulaqlıqlar"]
+    },
+    {
+      "ad": "Avto ehtiyat hissələri",
+      "ikon": "/icons/car-parts.png",
+      "alt_kateqoriyalar": ["Mühərrik hissələri", "Əyləc sistemləri", "Filtrlər"]
+    },
+    {
+      "ad": "Ofis texnikası",
+      "ikon": "/icons/office-equipment.png",
+      "alt_kateqoriyalar": ["Printerlər", "Skanerlər", "Faks cihazları"]
+    },
+    {
+      "ad": "Məişət texnikası",
+      "ikon": "/icons/home-appliances.png",
+      "alt_kateqoriyalar": ["Paltaryuyan maşınlar", "Tozsoranlar", "Mikrodalğalı sobalar"]
+    },
+    {
+      "ad": "Ağıllı ev sistemləri",
+      "ikon": "/icons/smart-home.png",
+      "alt_kateqoriyalar": ["Ağıllı işıqlandırma", "Təhlükəsizlik kameraları", "Ağıllı termostatlar"]
+    }
+  ]
+}
